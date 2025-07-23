@@ -1,0 +1,46 @@
+{
+  "name": "fsd-crawler",
+  "version": "1.0.7",
+  "description": "Инструмент для анализа зависимостей в проекте и построения схем",
+  "main": "index.js",
+  "bin": {
+    "fsd-crawler": "./index.js"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "go build -o bin/fsd-analyzer",
+    "prepublishOnly": "npm run build",
+    "analyze": "node index.js",
+    "test": "go test -short",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "fsd",
+    "feature-sliced",
+    "architecture",
+    "analyzer",
+    "dependencies"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/falkomerr/fsd-crawler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/falkomerr/fsd-crawler/issues"
+  },
+  "homepage": "https://github.com/falkomerr/fsd-crawler#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7"
+  }
+}

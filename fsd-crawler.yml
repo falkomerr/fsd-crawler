@@ -1,0 +1,32 @@
+srcDir: './src'
+outputDir: './dist'
+outputFormats:
+  - html
+
+excludeDirs:
+  - node_modules
+  - .git
+  - dist
+  - build
+  - coverage
+
+serveHTML: true
+
+port: 3123
+
+aliases:
+  '@': './src'
+
+allowedCyclicalDependencies:
+  - app/cn
+  - shared/ui
+  - entities/user
+
+customLayers:
+  - app
+  - processes
+  - pages
+  - widgets
+  - features
+  - entities
+  - shared 

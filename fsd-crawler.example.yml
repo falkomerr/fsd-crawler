@@ -1,0 +1,41 @@
+# Исходная директория для анализа
+srcDir: "."
+
+# Директория для сохранения результатов
+outputDir: "./dist"
+
+# Форматы вывода (поддерживаются html и json)
+outputFormats:
+  - html
+  - json
+
+# Директории, которые нужно исключить из анализа
+excludeDirs:
+  - node_modules
+  - .git
+  - dist
+  - build
+  - coverage
+
+# Пользовательские слои (если указаны, заменяют стандартные)
+# Если не указаны, используются стандартные слои FSD
+customLayers:
+  - app
+  - processes
+  - pages
+  - widgets
+  - features
+  - entities
+  - shared
+
+# Пользовательские сегменты (если указаны, заменяют стандартные)
+# Если не указаны, используются стандартные сегменты FSD
+customSegments:
+  - ui
+  - api
+  - model
+  - lib
+  - config
+
+# Путь к пользовательскому HTML шаблону (необязательно)
+# htmlTemplatePath: "./custom-template.html" 
