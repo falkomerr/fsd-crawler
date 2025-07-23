@@ -1,4 +1,4 @@
-srcDir: './src'
+srcDir: './test'
 outputDir: './dist'
 outputFormats:
   - html
@@ -14,13 +14,8 @@ serveHTML: true
 
 port: 3123
 
-aliases:
-  '@': './src'
-
 allowedCyclicalDependencies:
   - app/cn
-  - shared/ui
-  - entities/user
 
 customLayers:
   - app

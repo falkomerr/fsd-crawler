@@ -1,6 +1,6 @@
 {
   "name": "fsd-crawler",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Инструмент для анализа зависимостей в проекте и построения схем",
   "main": "index.js",
   "bin": {
