@@ -11,6 +11,15 @@ npm i -D fsd-crawler
 ```
 
 ### Использование
+Добавьте скрипт для запуска
+
+```json
+{
+  "scripts": {
+    "analyze": "fsd-crawler",
+  }
+}
+```
 
 ```bash
 npm run analyze
